@@ -1,0 +1,117 @@
+[
+    {
+        "model": "foods.foodcategory",
+        "pk": 1,
+        "fields": {
+            "name_ru": "Напитки",
+            "name_en": null,
+            "name_ch": null,
+            "order_id": 10
+        }
+    },
+    {
+        "model": "foods.foodcategory",
+        "pk": 2,
+        "fields": {
+            "name_ru": "Основные Блюда",
+            "name_en": null,
+            "name_ch": null,
+            "order_id": 20
+        }
+    },
+    {
+        "model": "foods.foodcategory",
+        "pk": 3,
+        "fields": {
+            "name_ru": "Выпечка",
+            "name_en": null,
+            "name_ch": null,
+            "order_id": 30
+        }
+    },
+    {
+        "model": "foods.foodcategory",
+        "pk": 4,
+        "fields": {
+            "name_ru": "Замороженные продукты",
+            "name_en": null,
+            "name_ch": null,
+            "order_id": 40
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 1,
+        "fields": {
+            "internal_code": 100,
+            "code": 1,
+            "category": 3,
+            "name_ru": "Хлеб",
+            "description_ru": "Хлеб обычный",
+            "is_vegan": false,
+            "is_special": false,
+            "cost": "50.00",
+            "is_publish": false
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 2,
+        "fields": {
+            "internal_code": 200,
+            "code": 2,
+            "category": 1,
+            "name_ru": "Чай",
+            "description_ru": "Чай 100 гр",
+            "is_vegan": false,
+            "is_special": false,
+            "cost": "123.00",
+            "is_publish": true
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 3,
+        "fields": {
+            "internal_code": 300,
+            "code": 3,
+            "category": 2,
+            "name_ru": "Паста",
+            "description_ru": "Паста с соусом",
+            "is_vegan": false,
+            "is_special": false,
+            "cost": "200.00",
+            "is_publish": true
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 4,
+        "fields": {
+            "internal_code": 400,
+            "code": 4,
+            "category": 1,
+            "name_ru": "Кола",
+            "description_ru": "Кола",
+            "is_vegan": false,
+            "is_special": false,
+            "cost": "123.00",
+            "is_publish": true
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 5,
+        "fields": {
+            "internal_code": 500,
+            "code": 5,
+            "category": 1,
+            "name_ru": "Спрайт",
+            "description_ru": "Спрайт",
+            "is_vegan": false,
+            "is_special": false,
+            "cost": "123.00",
+            "is_publish": false
+        }
+    }
+]
