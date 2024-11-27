@@ -12,7 +12,8 @@ class FoodAPITests(TestCase):
             return json.load(f)
 
     def load_fixtures(self, case_name):
-        base_path = os.path.join(Path(__file__).parent.parent.parent, 'fixtures', case_name)
+        base_path = os.path.join(Path(__file__).parent.parent.parent,
+                                 'fixtures\\test_foodlist_api', case_name)
         call_command('loaddata', os.path.join(base_path, 'catalog_data.json'))
         self.expected_data = self.load_json(os.path.join(base_path, 'expected_response.json'))
 
