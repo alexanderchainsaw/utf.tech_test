@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name_ru": "Напитки",
+        "name_en": null,
+        "name_ch": null,
+        "order_id": 10,
+        "foods": [
+            {
+                "internal_code": 100,
+                "code": 1,
+                "name_ru": "Чай",
+                "description_ru": "Чай 100 гр",
+                "description_en": null,
+                "description_ch": null,
+                "is_vegan": false,
+                "is_special": false,
+                "cost": "123.00",
+                "additional": []
+            }
+        ]
+    }
+]

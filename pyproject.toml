@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "utf-tech-test"
+version = "0.1.0"
+description = ""
+authors = ["alexanderchainsaw <alexanderkolesov.contact@gmail.com>"]
+readme = "README.md"
+packages = [{include = "utf"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.1.3"
+djangorestframework = "^3.15.2"
+django-model-utils = "^5.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

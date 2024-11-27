@@ -1,0 +1,57 @@
+[
+    {
+        "model": "foods.foodcategory",
+        "pk": 1,
+        "fields": {
+            "name_ru": "Напитки",
+            "name_en": null,
+            "name_ch": null,
+            "order_id": 10
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 1,
+        "fields": {
+            "internal_code": 100,
+            "code": 1,
+            "category": 1,
+            "name_ru": "Чай",
+            "description_ru": "Чай 100 гр",
+            "is_vegan": false,
+            "is_special": false,
+            "cost": "123.00",
+            "is_publish": true
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 2,
+        "fields": {
+            "internal_code": 200,
+            "code": 2,
+            "category": 1,
+            "name_ru": "Кола",
+            "description_ru": "Кола",
+            "is_vegan": false,
+            "is_special": false,
+            "cost": "123.00",
+            "is_publish": true
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 3,
+        "fields": {
+            "internal_code": 300,
+            "code": 3,
+            "category": 1,
+            "name_ru": "Спрайт",
+            "description_ru": "Спрайт",
+            "is_vegan": false,
+            "is_special": false,
+            "cost": "123.00",
+            "is_publish": true
+        }
+    }
+]
