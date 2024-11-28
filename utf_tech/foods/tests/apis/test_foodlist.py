@@ -3,9 +3,11 @@ import os
 from django.test import TestCase
 from django.core.management import call_command
 from pathlib import Path
+from django.urls import reverse
 
 
 class FoodAPITests(TestCase):
+    url = reverse('api:foods:food_list')
 
     def load_json(self, filename):
         with open(filename, 'r', encoding='utf-8') as f:
@@ -19,31 +21,31 @@ class FoodAPITests(TestCase):
 
     def test_case_1(self):
         self.load_fixtures('test_case_1')
-        response = self.client.get('/api/v1/foods/')
+        response = self.client.get(self.url)
         self.assertEqual(response.status_code, 200)
         self.assertJSONEqual(response.content.decode('utf-8'), self.expected_data)
 
     def test_case_2(self):
         self.load_fixtures('test_case_2')
-        response = self.client.get('/api/v1/foods/')
+        response = self.client.get(self.url)
         self.assertEqual(response.status_code, 200)
         self.assertJSONEqual(response.content.decode('utf-8'), self.expected_data)
 
     def test_case_3(self):
         self.load_fixtures('test_case_3')
-        response = self.client.get('/api/v1/foods/')
+        response = self.client.get(self.url)
         self.assertEqual(response.status_code, 200)
         self.assertJSONEqual(response.content.decode('utf-8'), self.expected_data)
 
     def test_case_4(self):
         self.load_fixtures('test_case_4')
-        response = self.client.get('/api/v1/foods/')
+        response = self.client.get(self.url)
         self.assertEqual(response.status_code, 200)
         self.assertJSONEqual(response.content.decode('utf-8'), self.expected_data)
 
     def test_case_5(self):
         self.load_fixtures('test_case_5')
-        response = self.client.get('/api/v1/foods/')
+        response = self.client.get(self.url)
         self.assertEqual(response.status_code, 200)
         self.assertJSONEqual(response.content.decode('utf-8'), self.expected_data)
 
