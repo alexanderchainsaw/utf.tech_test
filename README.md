@@ -12,6 +12,7 @@
  - Чтобы запустить тесты данной ручки - `python manage.py test utf_tech\foods\`
 
 ## Структура
+Интересующие нас файлы находятся в utf_tech/foods/
 ```
 config
    |-- __init__.py
